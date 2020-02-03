@@ -1,0 +1,197 @@
+/*PRE-SET */
+* {
+  -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*WHOLE PAGE*/
+.page {
+    background-color: #ffffff;
+    margin: 0 auto;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+/* PAGE HEAD */
+.page-head {
+    -ms-flex-preferred-size: 20%;
+    flex-basis: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 950px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.head-text {
+    color: #AE646E;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.span-text {
+    color: #707070;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*PAGE BODY*/
+
+.page-body {
+    -ms-flex-preferred-size: 40%;
+    flex-basis: 40%;
+    flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    background-color: transparent;
+    z-index: 10;
+}
+
+
+/*page body > browser items*/
+
+.browser-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 50px 75px;
+    margin: 15px;
+    flex-basis: 85%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-shadow: -2px 5px 15px 2px rgb(217, 223, 230);
+    box-shadow: -2px 5px 15px 2px rgb(217, 223, 230);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.browser-logo {
+    -ms-flex-preferred-size: 80%;
+    flex-basis: 80%;
+    padding-bottom: 15px;
+}
+
+.browser-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #408FEC;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.browser-version {
+    color: #707070;
+    font-weight: normal;
+    font-size: 11px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/*PAGE FOOTER*/
+.page-footer {
+    -ms-flex-preferred-size: 20%;
+    flex-basis: 20%;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+    align-content: space-between;
+-ms-flex-pack: distribute;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 999px) {
+    .page-head {
+        margin-top: 280px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .page-body {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .browser-item {
+        flex-basis: 35%;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .page-bgr {
+        background: #FFEEF3;
+        width: 80vw;
+        height: 150vh;
+        margin-left: 10vw;
+        border-radius: 50%;
+        margin-top: -520px;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .page-body {
+        flex-direction: row;
+        flex-basis: 45%;
+    }
+
+    .browser-item {
+        padding: 55px 95px;
+    }
+
+    .page-head {
+        position: relative;
+        z-index: 10;
+        margin-top: 0;
+    }
+}
